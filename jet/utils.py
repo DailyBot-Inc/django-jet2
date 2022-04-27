@@ -14,7 +14,7 @@ from django.contrib.admin import AdminSite
 from django.utils.encoding import smart_str
 from django.utils.text import capfirst
 from django.contrib import messages
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str
 from django.utils.functional import Promise
 from django.contrib.admin.options import IncorrectLookupParameters
 from django.contrib import admin
