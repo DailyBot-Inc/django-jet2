@@ -1,5 +1,5 @@
 from django.contrib.admin import RelatedFieldListFilter
-from django.utils.encoding import smart_text
+from django.utils.encoding import smart_str
 from django.utils.html import format_html
 from django.urls import reverse
 from django.contrib.admin.utils import get_model_from_relation

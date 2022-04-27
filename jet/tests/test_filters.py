@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.test import TestCase, RequestFactory
-from django.utils.encoding import smart_text
+from django.utils.encoding import smart_str
 from jet.filters import RelatedFieldAjaxListFilter
 from jet.tests.models import RelatedToTestModel, TestModel
 
