@@ -145,7 +145,7 @@ class LazyDateTimeEncoder(json.JSONEncoder):
 def get_model_instance_label(instance):
     if getattr(instance, "related_label", None):
         return instance.related_label()
-    return smart_text(instance)
+    return smart_str(instance)
 
 
 class SuccessMessageMixin(object):
