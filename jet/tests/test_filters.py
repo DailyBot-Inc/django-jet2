@@ -47,5 +47,5 @@ class FiltersTestCase(TestCase):
 
         self.assertIsInstance(choices, list)
         self.assertEqual(len(choices), 1)
-        self.assertEqual(choices[0], (initial.pk, smart_text(initial)))
+        self.assertEqual(choices[0], (initial.pk, smart_str(initial)))
 
