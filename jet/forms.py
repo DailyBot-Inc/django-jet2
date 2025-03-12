@@ -113,7 +113,7 @@ class ModelLookupForm(forms.Form):
             raise ValidationError('error')
 
         content_type = ContentType.objects.get_for_model(self.model_cls)
-        permission = Permission.objects.filter(content_type=content_type, codename__startswith='change_').first()
+        permission = Permission.objects.filter(content_type=content_type, codename__startswith='view_').first()
 
         if not self.request.user.has_perm('{}.{}'.format(data['app_label'], permission.codename)):
             raise ValidationError('error')
